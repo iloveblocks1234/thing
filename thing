@@ -1,22 +1,22 @@
 #!/bin/bash
 
-sudo nano ~/.bashrc
-echo ppppp="$(whoami)@$(uname -n)"
-lengthofppppp=${#ppppp}
-afterppppp=""
-clear
+sudo nano ~/.bashrc >> ~/.bashrc
+echo ppppp="$(whoami)@$(uname -n)" >> ~/.bashrc
+echo lengthofppppp=${#ppppp} >> ~/.bashrc
+echo afterppppp="" >> ~/.bashrc
+echo clear >> ~/.bashrc
 
-echo $ppppp
-while [ $lengthofppppp -gt 0 ]; do
-  afterppppp+='-'
-  lengthofppppp=$((lengthofppppp-1))
-done
+echo echo $ppppp >> ~/.bashrc
+echo while [ $lengthofppppp -gt 0 ]; do >> ~/.bashrc
+echo   afterppppp+='-' >> ~/.bashrc
+echo   lengthofppppp=$((lengthofppppp-1)) >> ~/.bashrc
+echo done >> ~/.bashrc
 
-echo $afterppppp
-echo "OS:             $(uname -o)"
-echo "Processor:      $(uname -p)"
-echo "Hardware Info:  $(uname -m)"
-echo "Kernal Name:    $(uname)"
-echo "Kernal Version: $(uname -v)"
-echo "Kernal Release: $(uname -r)"
-cd
+echo echo $afterppppp >> ~/.bashrc
+echo echo "OS:             $(uname -o)" >> ~/.bashrc
+echo echo "Processor:      $(uname -p)" >> ~/.bashrc
+echo echo "Hardware Info:  $(uname -m)" >> ~/.bashrc
+echo echo "Kernal Name:    $(uname)" >> ~/.bashrc
+echo echo "Kernal Version: $(uname -v)" >> ~/.bashrc
+echo echo "Kernal Release: $(uname -r)" >> ~/.bashrc
+echo cd >> ~/.bashrc
