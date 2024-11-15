@@ -2,3 +2,4 @@
 
 sudo chmod +x thing
 ./thing
+sudo rm -r thing
