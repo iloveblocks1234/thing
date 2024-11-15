@@ -5,6 +5,6 @@ while [ a -gt 0 ]; do
   sed -i '$d' ~/.bashrc
 done
 
-cd $(sudo find / -type d -name "thing")
+cd $(sudo find /home -type d -name "thing")
 cd ..
 sudo rm -rf thing
