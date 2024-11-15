@@ -19,5 +19,3 @@ echo 'echo "Kernel Name:    $(uname)"'
 echo 'echo "Kernel Version: $(uname -v)"'
 echo 'echo "Kernel Release: $(uname -r)"'
 } >> ~/.bashrc
-cd ..
-sudo rm -rf thing
