@@ -1,0 +1,22 @@
+#!/bin/bash
+
+sudo nano ~/.bashrc
+echo ppppp="$(whoami)@$(uname -n)"
+lengthofppppp=${#ppppp}
+afterppppp=""
+clear
+
+echo $ppppp
+while [ $lengthofppppp -gt 0 ]; do
+  afterppppp+='-'
+  lengthofppppp=$((lengthofppppp-1))
+done
+
+echo $afterppppp
+echo "OS:             $(uname -o)"
+echo "Processor:      $(uname -p)"
+echo "Hardware Info:  $(uname -m)"
+echo "Kernal Name:    $(uname)"
+echo "Kernal Version: $(uname -v)"
+echo "Kernal Release: $(uname -r)"
+cd
