@@ -1,21 +1,22 @@
 #!/bin/bash
 
-echo ${
-ppppp="$(whoami)@$(uname -n)"
-lengthofppppp=${#ppppp}
-afterppppp=""
-clear
-echo $ppppp
-while [ $lengthofppppp -gt 0 ]; do
-  afterppppp+=-
-  lengthofppppp=$((lengthofppppp-1))
-done
-echo $afterppppp
-echo "OS:             $(uname -o)"
-echo "Processor:      $(uname -p)"
-echo "Hardware Info:  $(uname -m)"
-echo "Kernel Name:    $(uname)"
-echo "Kernel Version: $(uname -v)"
-echo "Kernel Release: $(uname -r)"
-cd
+{
+echo ''
+echo 'ppppp="$(whoami)@$(uname -n)"'
+echo 'lengthofppppp=${#ppppp}'
+echo 'afterppppp=""'
+echo 'clear'
+echo 'echo $ppppp'
+echo 'while [ $lengthofppppp -gt 0 ]; do'
+echo '  afterppppp+=-'
+echo '  lengthofppppp=$((lengthofppppp-1))'
+echo 'done'
+echo 'echo $afterppppp'
+echo 'echo "OS:             $(uname -o)"'
+echo 'echo "Processor:      $(uname -p)"'
+echo 'echo "Hardware Info:  $(uname -m)"'
+echo 'echo "Kernel Name:    $(uname)"'
+echo 'echo "Kernel Version: $(uname -v)"'
+echo 'echo "Kernel Release: $(uname -r)"'
+echo 'cd'
 } >> ~/.bashrc
