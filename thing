@@ -18,6 +18,7 @@ echo 'echo "Hardware Info:  $(uname -m)"'
 echo 'echo "Kernel Name:    $(uname)"'
 echo 'echo "Kernel Version: $(uname -v)"'
 echo 'echo "Kernel Release: $(uname -r)"'
-echo 'cd'
 } >> ~/.bashrc
+source ~/.bashrc
+cd ..
 sudo rm -rf thing
